@@ -4,7 +4,7 @@ import { HttpLink } from 'apollo-link-http'
 
 export const client = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://info.kucoinswap.finance/subgraphs/name/ksfswap/ksfswap',
+    uri: 'https://new.kucoinswap.finance/subgraphs/name/ksfswap/ksfswap',
   }),
   cache: new InMemoryCache(),
   shouldBatch: true,
@@ -12,7 +12,7 @@ export const client = new ApolloClient({
 
 export const healthClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://admin.kucoinswap.finance/graphql',
+    uri: 'https://newadmin.kucoinswap.finance/graphql',
   }),
   cache: new InMemoryCache(),
   shouldBatch: true,
@@ -20,7 +20,7 @@ export const healthClient = new ApolloClient({
 
 export const v1Client = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://info.kucoinswap.finance/subgraphs/name/ksfswap/ksfswap',
+    uri: 'https://new.kucoinswap.finance/subgraphs/name/ksfswap/ksfswap',
   }),
   cache: new InMemoryCache(),
   shouldBatch: true,
@@ -28,7 +28,7 @@ export const v1Client = new ApolloClient({
 
 export const blockClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://info.kucoinswap.finance/subgraphs/name/rs-finance/kcc-block',
+    uri: 'https://new.kucoinswap.finance/subgraphs/name/rs-finance/kcc-block',
   }),
   cache: new InMemoryCache(),
 })
